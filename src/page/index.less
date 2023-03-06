@@ -1,0 +1,49 @@
+.wrapper {
+  width: 700px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 16px;
+
+  & > .card:last-child {
+    margin-right: 0;
+  }
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ccc;
+  width: 20px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ccc;
+  width: 20px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-shrink: 0;
+  color: green;
+  font-size: 70px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 180px;
+  margin-right: 16px;
+  border: 1px solid red;
+}
